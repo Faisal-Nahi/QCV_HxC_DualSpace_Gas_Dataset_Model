@@ -1,0 +1,18 @@
+Dual-Space Entropy-Complexity Framework - experiment report
+==============================================================
+
+## Synthetic abrupt (IID-style)
+   stream            : T=12000, p=6, latent_dim=3
+   ground-truth      : [9600, 10800]
+   dual-space        : F1=0.800  P=0.667  R=1.000  delay=264.0  FP=1
+   ablation F1       : raw=0.667  latent=0.667  dual=0.800
+   fusion F1         : mean=0.800  max=1.000  weighted=0.800  vote=0.800
+   k-sensitivity F1  : k2.5=0.800  k3=0.800  k3.5=1.000  k4=0.000
+
+## Synthetic IDT (autocorrelated)
+   stream            : T=15000, p=5, latent_dim=2
+   ground-truth      : [12000, 13500]
+   dual-space        : F1=1.000  P=1.000  R=1.000  delay=265.0  FP=0
+   ablation F1       : raw=1.000  latent=1.000  dual=1.000
+   fusion F1         : mean=1.000  max=0.500  weighted=1.000  vote=0.667
+   k-sensitivity F1  : k2.5=0.800  k3=1.000  k3.5=1.000  k4=0.000

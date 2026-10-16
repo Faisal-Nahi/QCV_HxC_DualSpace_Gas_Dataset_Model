@@ -1,0 +1,18 @@
+{
+  "name": "synthetic_idt",
+  "n_rows": 15000,
+  "n_features": 5,
+  "columns": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4"
+  ],
+  "train_ratio": 0.7,
+  "split_index": 10500,
+  "ground_truth_drifts": [
+    12000,
+    13500
+  ]
+}

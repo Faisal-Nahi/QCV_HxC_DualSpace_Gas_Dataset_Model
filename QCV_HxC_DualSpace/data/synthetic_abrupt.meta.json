@@ -1,0 +1,19 @@
+{
+  "name": "synthetic_abrupt",
+  "n_rows": 12000,
+  "n_features": 6,
+  "columns": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5"
+  ],
+  "train_ratio": 0.7,
+  "split_index": 8400,
+  "ground_truth_drifts": [
+    9600,
+    10800
+  ]
+}

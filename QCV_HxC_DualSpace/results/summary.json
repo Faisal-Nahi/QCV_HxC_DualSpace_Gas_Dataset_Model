@@ -1,0 +1,486 @@
+[
+  {
+    "name": "synthetic_abrupt",
+    "title": "Synthetic abrupt (IID-style)",
+    "T": 12000,
+    "p": 6,
+    "latent_dim": 3,
+    "split_index": 8400,
+    "ground_truth": [
+      9600,
+      10800
+    ],
+    "threshold": 3.271491454163162,
+    "dual_metrics": {
+      "TP": 2,
+      "FP": 1,
+      "FN": 0,
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "mean_delay": 264.0,
+      "fpr": 0.00027778,
+      "detections": [
+        8784,
+        9706,
+        11222
+      ],
+      "ground_truth": [
+        9600,
+        10800
+      ]
+    },
+    "ablation": {
+      "raw": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "mean_delay": 429.0,
+        "fpr": 0.0,
+        "detections": [
+          11229
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "latent": {
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "mean_delay": 104.0,
+        "fpr": 0.0,
+        "detections": [
+          9704
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "dual": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 264.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8784,
+          9706,
+          11222
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      }
+    },
+    "fusion_comparison": {
+      "mean": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 264.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8784,
+          9706,
+          11222
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "max": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 272.5,
+        "fpr": 0.0,
+        "detections": [
+          9710,
+          11235
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "weighted": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 264.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8783,
+          9706,
+          11222
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "vote": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 193.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8775,
+          9344,
+          10930
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      }
+    },
+    "k_sensitivity": {
+      "2.5": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 259.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8781,
+          9704,
+          11214
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "3": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 264.0,
+        "fpr": 0.00027778,
+        "detections": [
+          8784,
+          9706,
+          11222
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "3.5": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 271.0,
+        "fpr": 0.0,
+        "detections": [
+          9709,
+          11233
+        ],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      },
+      "4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_delay": null,
+        "fpr": 0.0,
+        "detections": [],
+        "ground_truth": [
+          9600,
+          10800
+        ]
+      }
+    },
+    "figures": {
+      "detection": "results/synthetic_abrupt_detection.png",
+      "scores": "results/synthetic_abrupt_scores.png",
+      "ablation": "results/synthetic_abrupt_ablation.png",
+      "hxc_plane": "results/synthetic_abrupt_hxc_plane.png"
+    }
+  },
+  {
+    "name": "synthetic_idt",
+    "title": "Synthetic IDT (autocorrelated)",
+    "T": 15000,
+    "p": 5,
+    "latent_dim": 2,
+    "split_index": 10500,
+    "ground_truth": [
+      12000,
+      13500
+    ],
+    "threshold": 3.086612930049186,
+    "dual_metrics": {
+      "TP": 2,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "mean_delay": 265.0,
+      "fpr": 0.0,
+      "detections": [
+        12218,
+        13812
+      ],
+      "ground_truth": [
+        12000,
+        13500
+      ]
+    },
+    "ablation": {
+      "raw": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 174.0,
+        "fpr": 0.0,
+        "detections": [
+          12216,
+          13632
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "latent": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 285.0,
+        "fpr": 0.0,
+        "detections": [
+          12264,
+          13806
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "dual": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 265.0,
+        "fpr": 0.0,
+        "detections": [
+          12218,
+          13812
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      }
+    },
+    "fusion_comparison": {
+      "mean": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 265.0,
+        "fpr": 0.0,
+        "detections": [
+          12218,
+          13812
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "max": {
+        "TP": 1,
+        "FP": 1,
+        "FN": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "mean_delay": 210.0,
+        "fpr": 0.00022222,
+        "detections": [
+          12210,
+          14021
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "weighted": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 263.0,
+        "fpr": 0.0,
+        "detections": [
+          12214,
+          13812
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "vote": {
+        "TP": 2,
+        "FP": 2,
+        "FN": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "mean_delay": 137.0,
+        "fpr": 0.00044444,
+        "detections": [
+          11796,
+          13064,
+          13570,
+          14536
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      }
+    },
+    "k_sensitivity": {
+      "2.5": {
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "mean_delay": 261.0,
+        "fpr": 0.00022222,
+        "detections": [
+          12213,
+          13809,
+          14942
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "3": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 265.0,
+        "fpr": 0.0,
+        "detections": [
+          12218,
+          13812
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "3.5": {
+        "TP": 2,
+        "FP": 0,
+        "FN": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_delay": 292.5,
+        "fpr": 0.0,
+        "detections": [
+          12267,
+          13818
+        ],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      },
+      "4": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_delay": null,
+        "fpr": 0.0,
+        "detections": [],
+        "ground_truth": [
+          12000,
+          13500
+        ]
+      }
+    },
+    "figures": {
+      "detection": "results/synthetic_idt_detection.png",
+      "scores": "results/synthetic_idt_scores.png",
+      "ablation": "results/synthetic_idt_ablation.png",
+      "hxc_plane": "results/synthetic_idt_hxc_plane.png"
+    }
+  }
+]
